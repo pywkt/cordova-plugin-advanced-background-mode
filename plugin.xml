@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-advanced-background-mode"
-        version="1.1.1">
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-advanced-background-mode" version="1.1.1">
 
     <name>BackgroundMode</name>
     <description>Prevent apps from going to sleep in background.</description>
@@ -24,7 +22,6 @@
     <!-- js -->
     <js-module src="www/background-mode.js" name="BackgroundMode">
         <clobbers target="cordova.plugins.backgroundMode" />
-        <clobbers target="plugin.backgroundMode" />
     </js-module>
 
     <!-- ios -->
@@ -73,17 +70,11 @@
             <uses-permission android:name="android.permission.WAKE_LOCK" />
         </config-file>
 
-        <source-file
-            src="src/android/BackgroundMode.java"
-            target-dir="src/de/einfachhans/BackgroundMode" />
+        <source-file src="src/android/BackgroundMode.java" target-dir="src/de/einfachhans/BackgroundMode" />
 
-        <source-file
-            src="src/android/BackgroundModeExt.java"
-            target-dir="src/de/einfachhans/BackgroundMode" />
+        <source-file src="src/android/BackgroundModeExt.java" target-dir="src/de/einfachhans/BackgroundMode" />
 
-        <source-file
-            src="src/android/ForegroundService.java"
-            target-dir="src/de/einfachhans/BackgroundMode" />
+        <source-file src="src/android/ForegroundService.java" target-dir="src/de/einfachhans/BackgroundMode" />
     </platform>
 
     <!-- browser -->
